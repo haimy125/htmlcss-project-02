@@ -107,9 +107,9 @@ a {
 }
 
 .header.fixed {
-    position: sticky;
     top: -28px;
     z-index: 1;
+    position: sticky;
 }
 
 .header .body {
@@ -289,7 +289,6 @@ a {
     margin-left: 14px;
     color: #171100;
     font-size: 1.8rem;
-    font-style: normal;
     font-weight: 600;
     line-height: 1.67; /* 166.667% */
 }
@@ -352,7 +351,8 @@ a {
 
 /* Courses List */
 .popular .courses-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 55px;
 }
@@ -594,14 +594,15 @@ a {
 }
 
 .blog .blog-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-top: 55px;
     overflow: hidden;
 }
 
 .blog .item {
-    width: calc(33.33% - 20px);
+    /* width: calc(33.33% - 20px); */
     border-radius: 16px;
     flex-shrink: 0;
     background: #fff;

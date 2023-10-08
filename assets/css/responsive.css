@@ -1,0 +1,258 @@
+/* PC */
+@media screen and (min-width: 992px) {
+    .mobile-header {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: none;
+    }
+}
+/* Tablet & Mobile */
+@media screen and (max-width: 991.98px) {
+    .nav ul {
+        display: none;
+    }
+
+    .toggle-menu svg {
+        width: 24px;
+        color: #666;
+    }
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer {
+        position: fixed;
+        padding: 60px;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 2;
+        transform: translateX(-100%);
+        transition: 0.5s ease;
+    }
+
+    .menu-drawer ul {
+        margin-top: 32px;
+    }
+
+    .menu-drawer ul a {
+        display: block;
+        padding: 14px 0;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-drawer {
+        transform: translateX(0);
+    }
+
+    .header .body {
+        position: relative;
+        column-gap: 20px;
+        justify-content: space-between;
+    }
+
+    .header .logo-link {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hero .media-block {
+        width: 100%;
+    }
+
+    .hero .cta-group {
+        display: block;
+    }
+
+    .hero .watch-video {
+        margin: 32px 0 0;
+    }
+
+    .hero-summary {
+        width: 70%;
+        right: -10%;
+    }
+    .hero .stats strong {
+        padding: 0 6px 0 28px;
+        font-size: 3.8rem;
+    }
+
+    .hero .stats span {
+        font-size: 1.5rem;
+    }
+
+    .hero .content-block {
+        padding: 0 0 0 64px;
+    }
+
+    .hero .media-block .img {
+        width: 100%;
+    }
+
+    .hero .content-block {
+        width: 100%;
+    }
+
+    .popular {
+        margin-top: 100px;
+    }
+
+    .popular .courses-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feedback {
+        padding: 96px 32px;
+    }
+
+    .feedback-item blockquote {
+        font-size: 1.9rem;
+    }
+
+    .features .body {
+        flex-direction: column-reverse;
+    }
+
+    .features .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .features .images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .features img.lower {
+        margin: 0;
+    }
+
+    .features .heading.lv2 {
+        width: 80%;
+    }
+
+    .features .desc {
+        width: 80%;
+    }
+
+    .blog .blog-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        padding: 96px 24px 32px;
+    }
+
+    .footer .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 60px;
+    }
+
+    .footer .row .column {
+        width: 100%;
+    }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+/* Mobile */
+@media screen and (max-width: 767.98px) {
+    .header .action {
+        display: none;
+    }
+    .heading.lv1 {
+        font-size: 5.5rem;
+    }
+    .separate {
+        border-top: 1.5px solid #ebebeb;
+    }
+
+    .hero .content-block {
+        padding: 0;
+    }
+
+    .hero .media-block {
+        display: none;
+    }
+
+    .popular .courses-list {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-top {
+        position: relative;
+    }
+
+    .popular-top .desc {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .popular-top .controls {
+        position: absolute;
+        right: 0;
+        bottom: -40px;
+    }
+
+    .feedback-item blockquote {
+        font-size: 1.6rem;
+    }
+
+    .features .images {
+        flex-direction: column;
+        width: 100%;
+        row-gap: 20px;
+    }
+
+    .features .desc {
+        margin-top: 32px;
+    }
+
+    .features-2nd .images img {
+        width: 100%;
+    }
+
+    .blog .blog-list {
+        grid-template-columns: 1fr;
+    }
+
+    .blog .blog-top .desc {
+        width: 100%;
+    }
+
+    .footer .row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer .desc {
+        max-width: 100%;
+    }
+
+    .footer .row .column:first-child {
+        width: 100%;
+    }
+}
