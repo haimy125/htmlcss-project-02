@@ -112,10 +112,6 @@
         width: 100%;
     }
 
-    .popular {
-        margin-top: 100px;
-    }
-
     .popular .courses-list {
         grid-template-columns: 1fr 1fr;
     }
