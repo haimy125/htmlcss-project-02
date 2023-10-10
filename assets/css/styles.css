@@ -108,7 +108,7 @@ a {
 
 .header.fixed {
     top: -28px;
-    z-index: 1;
+    z-index: 10;
     position: sticky;
 }
 
@@ -448,6 +448,7 @@ a {
 }
 
 .feedback-item {
+    position: relative;
     display: flex;
     width: 100%;
     flex-shrink: 0;
@@ -478,8 +479,10 @@ a {
 }
 
 .feedback-item .dots {
-    margin-top: 28px;
     display: flex;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
 }
 
 .feedback-item .dot {
