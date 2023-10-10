@@ -163,12 +163,9 @@
         margin: 0;
     }
 
+    .features .desc,
     .features .heading.lv2 {
-        width: 80%;
-    }
-
-    .features .desc {
-        width: 80%;
+        width: 83%;
     }
 
     .blog {
